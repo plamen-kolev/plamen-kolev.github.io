@@ -6049,6 +6049,9 @@ p {
   margin: auto;
   margin-top: 25px; }
 
+.footer_circle {
+  text-align: center; }
+
 .intro_image {
   margin: auto; }
 
@@ -6110,7 +6113,7 @@ p {
   margin-top: -8px; }
 
 .footer .menu_circle img {
-  margin-top: 38px; }
+  margin-top: 32px; }
 
 .article_tag {
   color: black;
