@@ -6045,9 +6045,9 @@ p {
   background: #dfdfdf; }
 
 .menu_circle img {
-  margin-top: 33px;
   text-align: center;
-  margin-left: 27px; }
+  margin: auto;
+  margin-top: 25px; }
 
 .intro_image {
   margin: auto; }
