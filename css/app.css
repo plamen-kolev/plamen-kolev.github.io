@@ -5732,6 +5732,24 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.experience h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 0px;
+  margin-bottom: 25px; }
+
+.experience h2 {
+  margin-top: 20px; }
+
+.experience h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 1.3em;
+  font-weight: bold;
+  font-family: "Droid Sans", sans-serif; }
+
+.experience p {
+  margin-bottom: 30px; }
+
 ::-moz-selection {
   background: black;
   color: white; }
@@ -5807,12 +5825,6 @@ h1 {
 
 .bold_text, #titlebar h1 span {
   font-family: "Montserrat", sans-serif; }
-
-h2 {
-  margin-left: 5px; }
-
-h3 {
-  margin-left: 5px; }
 
 h2, h3 {
   font-family: "Open Sans, Sans"; }
