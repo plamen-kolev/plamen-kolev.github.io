@@ -6180,10 +6180,15 @@ p {
   margin-right: 4px; }
 
 .url_container {
-  background-color: white; }
+  background-color: #4e4e4e; }
+
+.overlay_work {
+  position: absolute;
+  bottom: 15px;
+  left: 10px; }
 
 .source_container {
-  background-color: #af6e8c; }
+  background-color: #139fec; }
 
 @media (max-width: 765px) {
   #logo_menu {
