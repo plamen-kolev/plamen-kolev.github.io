@@ -1,0 +1,36 @@
+p{
+	font-size:0.9em;
+}
+
+h1{
+	font-size: 1.5em;
+}
+
+h2{
+	font-size:1.3em;
+}
+
+h3{
+	font-size: 1em;
+}
+
+
+.experience_left{
+    width:500px;
+    float: left !important;
+    min-width: 360px;
+}
+
+.experience_right-child{
+    width:700px;
+    float: none !important;
+}
+
+.footer{
+	display: none;
+}
+
+.print_only{
+	display: block;
+	background:green;
+}

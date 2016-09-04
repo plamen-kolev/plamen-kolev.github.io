@@ -5732,8 +5732,24 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+.print_only {
+  display: none; }
+
+.experience_left {
+  float: left !important; }
+
+.experience_right {
+  float: none !important; }
+
+.experience td {
+  vertical-align: top;
+  padding: 0px 10px 0px 10px; }
+
+.experience td:last-child {
+  min-width: 500px; }
+
 .experience h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans";
   margin-top: 0px;
   margin-bottom: 25px; }
 
@@ -5749,6 +5765,9 @@ button.close {
 
 .experience p {
   margin-bottom: 30px; }
+
+.skills > p {
+  margin: 0px; }
 
 ::-moz-selection {
   background: black;
