@@ -5735,6 +5735,23 @@ button.close {
 .print_only {
   display: none; }
 
+.special_button {
+  padding: 16px 26px 16px 26px;
+  color: #777;
+  font-weight: bold;
+  text-decoration: underline; }
+
+.special_button:hover {
+  border: 2px solid #000;
+  padding: 14px 24px;
+  border-radius: 1px;
+  color: #333;
+  text-decoration: none;
+  background-color: transparent; }
+
+.experience td:last-child {
+  min-width: 500px; }
+
 .experience_left {
   float: left !important; }
 
@@ -5745,11 +5762,8 @@ button.close {
   vertical-align: top;
   padding: 0px 10px 0px 10px; }
 
-.experience td:last-child {
-  min-width: 500px; }
-
 .experience h1 {
-  font-family: "Open Sans";
+  font-family: "Montserrat", sans-serif;
   margin-top: 0px;
   margin-bottom: 25px; }
 
