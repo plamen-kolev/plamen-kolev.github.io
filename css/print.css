@@ -114,8 +114,8 @@
         background: #e6f3ff !important;
     }
 
-    .contact_information td{
-        line-height: 0.4;
+    .contact-details-spacing{
+        line-height: -1px !important;
         font-size:1.3em;
     }
 
