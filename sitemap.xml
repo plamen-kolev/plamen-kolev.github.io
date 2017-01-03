@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>http://kolev.io/</loc>
+		<priority>1.0</priority>
+		<lastmod>2016-11-16T10:30:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://kolev.io/articles.html</loc>
+		<priority>1.0</priority>
+		<lastmod>2016-11-16T10:30:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://kolev.io/creative.html</loc>
+		<priority>1.0</priority>
+		<lastmod>2016-11-16T10:30:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://kolev.io/biography.html</loc>
+		<priority>1.0</priority>
+		<lastmod>2016-11-16T10:30:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://kolev.io/media/*.pdf</loc>
+		<priority>1.0</priority>
+		<lastmod>2016-11-16T10:30:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://kolev.io/articles/classifying_with_neural_networks_and_genetic_programming.html</loc>
+		<priority>1.0</priority>
+		<lastmod>2016-11-16T10:30:00+00:00</lastmod>
+		<changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>http://kolev.io/creative.html</loc>
+		<priority>0.9</priority>
+		<lastmod>2016-06-24T12:30:00+00:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<image:image>
+			<image:loc>http://kolev.io//media/images/creative/cr.jpg</image:loc>
+			<image:title>Image title</image:title>
+			<image:caption>Image caption</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://kolev.io//media/images/creative/hackne_logo.jpg</image:loc>
+			<image:title>Image title</image:title>
+			<image:caption>Image caption</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://kolev.io//media/images/creative/hackne_poster.jpg</image:loc>
+			<image:title>Image title</image:title>
+			<image:caption>Image caption</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://kolev.io//media/images/creative/hackne_print.jpg</image:loc>
+			<image:title>Image title</image:title>
+			<image:caption>Image caption</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://kolev.io//media/images/creative/lloyds_bank.jpg</image:loc>
+			<image:title>Image title</image:title>
+			<image:caption>Image caption</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://kolev.io//media/images/creative/lux.png</image:loc>
+			<image:title>Image title</image:title>
+			<image:caption>Image caption</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://kolev.io//media/images/creative/neven.jpg</image:loc>
+			<image:title>Image title</image:title>
+			<image:caption>Image caption</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://kolev.io//media/images/creative/spendwell_poster.jpg</image:loc>
+			<image:title>Image title</image:title>
+			<image:caption>Image caption</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://kolev.io//media/images/creative/spenwell_app.jpg</image:loc>
+			<image:title>Image title</image:title>
+			<image:caption>Image caption</image:caption>
+		</image:image>
+		<image:image>
+			<image:loc>http://kolev.io//media/images/creative/stage_tuts.jpg</image:loc>
+			<image:title>Image title</image:title>
+			<image:caption>Image caption</image:caption>
+		</image:image>
+  </url>
+</urlset>
+
