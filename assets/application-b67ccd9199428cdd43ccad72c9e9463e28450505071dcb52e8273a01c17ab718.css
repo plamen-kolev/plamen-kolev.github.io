@@ -1,0 +1,1028 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ 
+
+ */
+/* line 37, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+html, body {
+  height: 100%;
+  background: white;
+}
+
+/* line 42, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+code {
+  color: #216ea2;
+}
+
+/* line 46, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+em {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #4694cc;
+          text-decoration-color: #4694cc;
+}
+
+/* line 51, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.navbar-container {
+  border-bottom: 1px solid #e7e7e7;
+}
+
+/* line 55, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.menu_item, .menu_item a {
+  color: black;
+}
+
+/* line 59, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.menu_item:hover, .menu_item:focus, .menu_item a {
+  color: black;
+}
+
+/* line 63, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.divider {
+  color: #216ea2;
+}
+
+/* line 67, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.main_menu > li > a:hover {
+  border-bottom: 2px solid #216ea2;
+}
+
+/* line 71, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.error {
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* line 77, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 81, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.inline-block {
+  display: inline-block;
+}
+
+/* line 85, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+tr {
+  background-color: white !important;
+}
+
+/* line 89, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.main_content {
+  min-height: 600px;
+}
+
+/* line 93, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.main_menu a {
+  text-decoration: none;
+}
+
+/* line 97, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.logo_container {
+  width: 110px;
+  height: 110px;
+  border-radius: 80px;
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+}
+
+/* line 106, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.logo_container img {
+  margin-top: 15px;
+  height: 70px;
+}
+
+/* line 111, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.landing_caption {
+  color: black;
+  font-size: 2.1em;
+  line-height: 42px;
+  letter-spacing: 3px;
+  margin-left: 152px;
+  display: inline-block;
+}
+
+/* line 120, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.design_wrap {
+  text-align: center;
+}
+
+/* line 125, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.design_container {
+  display: inline-block;
+  background-color: #e7e8ea;
+  margin: 10px;
+}
+
+/* line 131, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.design_container img {
+  max-width: 250px;
+}
+
+/* line 136, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.print_only {
+  display: none;
+}
+
+/* line 141, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.special_button {
+  padding: 16px 26px 16px 26px;
+  color: #111;
+  background: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* line 149, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.special_button:hover {
+  border: 2px solid #000;
+  padding: 14px 24px;
+  border-radius: 1px;
+  color: #333;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+/* line 159, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.experience td:last-child {
+  min-width: 500px;
+}
+
+/* line 163, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.experience td {
+  vertical-align: top;
+  padding: 0px 10px 0px 10px;
+}
+
+/* line 168, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.experience h1 {
+  font-family: "Montserrat", serif !important;
+  text-transform: uppercase;
+  margin: 15px 0px 15px 0px;
+}
+
+/* line 174, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.experience h2 {
+  margin-top: 20px;
+  font-family: "Nunito", sans-serif !important;
+}
+
+/* line 179, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.experience h3, .clarification {
+  font-weight: bold;
+  font-family: "Nunito", sans-serif !important;
+  font-size: 1.5em;
+  border-left: 3px solid #4694cc;
+  padding: 5px 5px 5px 10px;
+  background: #e6f3ff !important;
+  display: inline-block;
+  margin: 0px 0px 14px 0px;
+}
+
+/* line 190, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.section {
+  margin: 0px 0px 20px 0px;
+  background: white;
+}
+
+/* line 195, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.experience_tr p {
+  font-size: 1.5em;
+  font-family: "Nunito", sans-serif !important;
+}
+
+/* line 200, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.skills > p {
+  margin: 0px;
+}
+
+/* line 205, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+::-moz-selection {
+  background: black;
+  color: white;
+}
+
+/* line 210, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+::-moz-selection {
+  background: black;
+  color: white;
+}
+::selection {
+  background: black;
+  color: white;
+}
+
+/* line 215, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.top_margin {
+  margin-top: 20px;
+}
+
+/* line 219, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.overflow_hidden {
+  overflow: hidden;
+}
+
+/* line 223, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+hr {
+  border-top: 1px solid #ebebeb;
+}
+
+/* line 227, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+h1 {
+  font-family: "Nunito", sans-serif, Sans;
+}
+
+/* line 232, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.capital {
+  text-transform: uppercase;
+}
+
+/* line 236, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.main_menu {
+  display: inline-block;
+  margin-top: 47px;
+}
+
+/* line 241, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.thumbnail {
+  margin-right: 20px;
+}
+
+/* line 245, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.main_head {
+  font-size: 2em;
+}
+
+/* line 249, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.block {
+  display: block;
+}
+
+/* line 253, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.title {
+  color: #333 !important;
+}
+
+/* line 257, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.main_head a {
+  color: #216ea2;
+}
+
+/* line 261, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.article_container {
+  margin-left: 5px;
+}
+
+/* line 265, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.article_thumbnail h1 {
+  font-family: "Nunito", sans-serif, Sans;
+  margin-top: 5px;
+}
+
+/* line 270, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.article_thumbnail {
+  box-shadow: 0px 0px 6px #e6ebee;
+  border-bottom: 1px solid #ebebeb;
+  margin-top: 2px;
+  clear: both;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+/* line 279, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.article_date {
+  color: #5a5a5a;
+}
+
+/* line 284, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.hover:hover {
+  text-decoration: none;
+  background: black;
+  color: white;
+  background: #292929;
+  border-radius: 2px;
+}
+
+/* line 293, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.bold_text, #titlebar h1 span {
+  font-family: "Montserrat", serif;
+}
+
+/* line 297, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+caption.title, div.title {
+  font-size: 2em !important;
+}
+
+/* line 301, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+h2, h3 {
+  font-family: "Nunito", sans-serif;
+}
+
+/* line 305, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.hvr-grow {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+/* line 316, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.red {
+  color: #FF0047;
+}
+
+/* line 320, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+p {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5em;
+}
+
+/* line 325, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+h1 {
+  font-size: 2.2em;
+}
+
+/* line 329, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 333, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+h3 {
+  font-size: 1, 8em;
+}
+
+/* line 337, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#titlebar {
+  margin-top: 30px;
+  background-color: #383839;
+  display: inline-block;
+  width: 100%;
+  padding: 30px;
+}
+
+/* line 346, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.outside_the_frame {
+  position: relative;
+  top: 0px;
+}
+
+/* line 351, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.article_links {
+  margin-top: 40px;
+}
+
+/* line 355, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.article_links a {
+  font-size: 1.5em;
+}
+
+/* line 359, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.article_links i {
+  margin-right: 10px;
+}
+
+/* line 363, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.wrapper {
+  max-width: 1600px;
+  margin: auto;
+  padding: 0px 5px;
+}
+
+/* line 369, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.menu_name {
+  font-family: "Montserrat", serif;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  font-size: 2em;
+  margin-right: 30px;
+}
+
+/* line 379, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.menu_name p {
+  display: inline-block;
+}
+
+/* line 384, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.navbar {
+  margin-bottom: 0px;
+}
+
+/* line 388, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.navbar-brand {
+  font-size: 2em;
+  width: 100%;
+  height: 100%;
+  margin: auto !important;
+}
+
+/* line 395, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#title_surname_menu {
+  color: #555;
+  display: block;
+  margin-top: -17px;
+  font-size: 0.91em;
+}
+
+/* line 402, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#titlebar a {
+  color: #757575;
+  font-family: "Nunito", sans-serif;
+}
+
+/* line 407, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#titlebar span {
+  font-family: "Nunito", sans-serif;
+}
+
+/* line 411, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#title_contact_details span {
+  margin-top: -10px;
+}
+
+/* line 415, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#titlebar a:hover {
+  text-decoration: none;
+  color: #68D5FF;
+}
+
+/* line 420, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#titlebar h1, .menu_name {
+  margin-left: 30px;
+  color: #68D5FF;
+  display: inline-block;
+  text-align: right;
+}
+
+/* line 427, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#titlebar h1 {
+  font-size: 7em;
+}
+
+/* line 432, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#title_surname {
+  display: block;
+  margin-top: -40px;
+  font-size: 0.915em;
+  color: white;
+}
+
+/* line 439, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#titlebar p {
+  float: right;
+}
+
+/* line 443, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#title_contact_details {
+  float: right;
+  margin-top: 45px;
+}
+
+/* line 448, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#title_contact_details span {
+  text-align: right;
+  display: block;
+  /*margin-right:40px;*/
+  color: white;
+  font-size: 1.6em;
+}
+
+/* line 456, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#title_contact_details span > strong {
+  color: #68D5FF;
+}
+
+/* line 460, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#left_side {
+  display: inline-block;
+  padding: 10px;
+  width: 60%;
+  text-align: right;
+}
+
+/* line 467, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#right_side {
+  display: inline-block;
+  width: 35%;
+  margin-top: 14px;
+  margin-left: 10px;
+  vertical-align: top;
+}
+
+/* line 475, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#separator {
+  vertical-align: top;
+  margin-top: 115px;
+  display: inline-block;
+  background-color: red;
+  width: 6px;
+  height: 550px;
+}
+
+/* line 484, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#right_side h3, #left_side h3 {
+  margin-top: -14px;
+}
+
+/* line 488, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#right_side div, #left_side div {
+  margin-top: 40px;
+  border-bottom: 1px solid #EFEFEF;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* line 496, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#right_side p {
+  margin-right: 80px;
+}
+
+/* line 500, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#left_side p {
+  margin-left: 80px;
+}
+
+/* line 504, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.grayed_out {
+  color: #C7C8CA;
+}
+
+/* line 508, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#skills p {
+  margin: 0px;
+}
+
+/* line 512, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#skills p span {
+  font-size: 1.5em;
+}
+
+/* line 516, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#content {
+  max-width: 100%;
+}
+
+/* line 521, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.blocky_container {
+  margin-top: 150px;
+}
+
+/* line 525, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.blocky_container img {
+  float: right;
+}
+
+/* line 529, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.blocky_container h2 {
+  margin-bottom: 30px;
+}
+
+/* line 533, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.post_image {
+  /*margin:auto;*/
+  float: right;
+  border: 1px solid #ececec;
+  padding: 20px;
+  margin: 2px 2px 5px 5px;
+  display: block;
+  max-width: 60%;
+}
+
+/* line 543, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.center {
+  text-align: center;
+}
+
+/* line 547, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#index_main_title {
+  margin-top: 90px;
+  margin-bottom: 80px;
+}
+
+/* line 552, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+#profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 200px;
+  background: url("../images/profile.jpg");
+  background-size: cover;
+  display: inline-block;
+}
+
+/* line 561, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.navbar-default {
+  background: white;
+}
+
+/* line 565, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.article_wrapper pre {
+  width: 100%;
+}
+
+/* line 569, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.profile_text {
+  text-align: left;
+}
+
+/* line 573, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.menu_item {
+  font-size: 1.5em;
+  font-family: "Montserrat", serif;
+  display: inline-block;
+}
+
+/* line 579, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+  border: none;
+}
+
+/* line 583, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.menu_circle {
+  background: #f9f9f9;
+  border-radius: 75px;
+  height: 110px;
+  width: 110px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  z-index: 1;
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
+/* line 594, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.menu_circle:hover {
+  background: #dfdfdf;
+}
+
+/* line 598, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.menu_circle img {
+  text-align: center;
+  margin: auto;
+  padding-left: 15px;
+  margin-top: 25px;
+}
+
+/* line 605, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.footer_circle {
+  text-align: center;
+}
+
+/* line 609, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.intro_image {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 615, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.landing {
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-image: url("/assets/landing-c2af8bf7162eb9085cffae06c87c0be2ad8a52191e9b6600384821600ca52b7e.jpg");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/* line 626, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.overlay_hack {
+  position: absolute;
+  background-image: url("/assets/dark-dots-50a86c62631501bb14cde68303f4b5ebf83bc749dfb1dd5e07d102bedb0873f6.png");
+  width: 100%;
+  top: 0;
+  max-width: 100%;
+  height: 100%;
+}
+
+/* line 635, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.outer_intro {
+  background-repeat: no-repeat;
+  background-color: #e6ecf3;
+  height: 700px;
+}
+
+/* line 641, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.slogan_wrapper {
+  top: 40%;
+  width: 100%;
+  position: relative;
+}
+
+/* line 647, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.slogan {
+  display: inline;
+  line-height: 1.25;
+  background-color: #252525;
+  color: #f0f0f0;
+  font-size: 2em;
+  padding-right: 10px;
+}
+
+/* line 656, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.footer_part1 {
+  width: 100%;
+  height: 40px;
+  background-color: #2e2e2e;
+}
+
+/* line 662, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.footer_part2 {
+  width: 100%;
+  background-color: #363636;
+  overflow: hidden;
+}
+
+/* line 668, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.footer_part2 > .wrapper {
+  overflow: hidden;
+}
+
+/* line 672, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.nopadding {
+  padding: 0px;
+}
+
+/* line 676, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.nopadding_left_rigt {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 682, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.nomargin {
+  margin: 0px;
+}
+
+/* line 686, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.footer {
+  margin-top: 58px;
+  position: relative;
+  bottom: 0px;
+}
+
+/* line 692, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.footer .menu_circle {
+  background-color: #2e2e2e;
+  margin-top: -8px;
+}
+
+/* line 698, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.footer .menu_circle img {
+  margin-top: 32px;
+}
+
+/* line 702, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.hamburger {
+  height: 50px;
+  width: 50px;
+  font-size: 2em;
+  margin-top: 45px;
+}
+
+/* line 709, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.article_tag {
+  color: #3e4042;
+  display: inline-block;
+  font-size: .8em;
+  padding: 1px 5px;
+  margin-right: 5px;
+}
+
+/* line 717, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.article_tag_container {
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
+
+/* line 722, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.work_item {
+  display: inline-block;
+}
+
+/* line 726, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 730, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.drop_shadow {
+  box-shadow: 2px 2px 16px -6px rgba(0, 0, 0, 0.75);
+  margin-bottom: 30px;
+  min-height: 260px;
+  max-width: 324px;
+}
+
+/* line 737, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.overflow_protector {
+  overflow: hidden;
+  position: relative;
+}
+
+/* line 742, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.overflow_protector img {
+  overflow: hidden;
+  /*width:100%;*/
+}
+
+/* line 747, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.work_title {
+  margin-top: 2px;
+  margin-left: 13px;
+  font-size: 1.5em;
+  margin-bottom: 0px;
+}
+
+/* line 754, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.work_information {
+  margin-top: 17px;
+}
+
+/* line 758, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.work_information h1 {
+  display: inline-block;
+}
+
+/* line 762, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.glyphicon-visit-work {
+  background-image: url("../images/external-link-square-with-an-arrow-in-right-diagonal.png");
+  width: 24px;
+  background-repeat: no-repeat;
+  margin-left: 7px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+/* line 771, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.glyphicon-visit-source {
+  background-image: url("../images/github-logo.png");
+  width: 24px;
+  background-repeat: no-repeat;
+  margin-left: 7px;
+  height: 25px;
+  margin-top: 5px;
+}
+
+/* line 780, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.circle_sources {
+  height: 30px;
+  width: 30px;
+  border-radius: 18px;
+  margin-right: 4px;
+}
+
+/* line 788, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.url_container {
+  background-color: #4e4e4e;
+}
+
+/* line 792, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.overlay_work {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+}
+
+/* line 798, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.source_container {
+  background-color: #139fec;
+}
+
+/* line 802, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.align-right {
+  text-align: right;
+}
+
+/* line 806, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.footer th, .footer td {
+  background: #363636;
+  color: #d0d0d0;
+  border: none;
+  padding: 2px;
+  font-size: 1.2em;
+}
+
+/* line 814, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.white {
+  color: white;
+}
+
+/* line 818, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.footer td a {
+  color: #E6F3FF;
+}
+
+/* line 822, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.footer p {
+  color: #d0d0d0;
+  margin-top: 36px;
+}
+
+/* line 827, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.footer table {
+  border: none;
+}
+
+@media (min-width: 765px) {
+  /* line 832, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  .main_menu > li {
+    padding: 16px 26px 16px 26px;
+  }
+
+  /* line 836, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  .main_menu .divider {
+    display: none;
+  }
+}
+@media (max-width: 960px) {
+  /* line 842, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  #mobile_footer_right {
+    float: left;
+    text-align: left;
+  }
+}
+/* line 848, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+.landing_icon {
+  font-size: 3.5em;
+  margin-top: 32px;
+  color: #2c719a;
+}
+
+@media (max-width: 765px) {
+  /* line 855, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  .menu_item {
+    margin: 0px;
+    padding: 16px 0px 16px 0px;
+  }
+
+  /* line 860, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  .menu_item a {
+    margin: 0px;
+  }
+
+  /* line 864, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  .landing_caption {
+    line-height: 29px;
+  }
+
+  /* line 868, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  .outer_intro {
+    height: 179px !important;
+  }
+
+  /* line 872, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  .landing_caption {
+    margin-top: -5px;
+  }
+
+  /* line 876, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  #responsive_landing_hack {
+    margin-top: -40px;
+  }
+
+  /* line 881, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  .landing_caption {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 580px) {
+  /* line 887, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  .main_menu {
+    margin-top: 40px;
+  }
+
+  /* line 891, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  .menu_item {
+    padding: 0px;
+    display: block;
+  }
+
+  /* line 896, /home/hallagat/Desktop/portfolio/app/assets/stylesheets/application.scss */
+  .main_menu .divider {
+    display: none;
+  }
+}
