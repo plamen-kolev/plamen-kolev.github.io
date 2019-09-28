@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>Plamen Kolev's Blog</title>
-        <link rel="stylesheet" media="screen" href="/assets/styles/asciidoctor-17b5ecd0da3e95005da9b5aab4b3e6dedd50479c6d8798ae1acbda75335c8ca4.css" /> 
+        <link rel="stylesheet" media="screen" href="/assets/styles/asciidoctor.self-df8490775f9c766cf52d184b425e12b719d2aec4c1d3fbccccf9a1302a933e35.css?body=1" /> 
 
     
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito" rel="stylesheet"/>
@@ -10,10 +10,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon-b4efd2171ee890e5dd7d1621f5f267318f46d46c368105bb1fb92bc0466a4e92.png" />
     <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="aTj+L96Q4H7tvMCSzz2UqbWACzDM9oerJaHZPJQYI9s7NAzaFqu8/21pzyUZSRYvcYy7w4OPW7f36Sjhpnllbg==" />
-    <link rel="stylesheet" media="screen" href="/assets/bootstrap.min-7307797e236f9b1392c0a52e1aa8603d4bf231f0518fa9cc68799d7b9a9e8804.css" />
-    <link rel="stylesheet" media="all" href="/assets/application-6697b9355a5cf1b42a9bcc3acfb11d6970ee3238d866fe1e57cb4617acf9632e.css" data-turbolinks-track="reload" />
-        <link rel="stylesheet" media="screen" href="/assets/styles/github-gist.min-acfbf141dac7c1dea84e2deb4fda718cb49b73a2610335f12c6f1202257066a1.css" /> 
+<meta name="csrf-token" content="P3wmEAI1/qj6gPtuSEiz6v7SUJVVnSTUHkF0HMwKF8zA8oKiTh+eHSITUoz1Y7edk+KwEXqK7thIVEl8/cSLYA==" />
+    <link rel="stylesheet" media="screen" href="/assets/bootstrap.min.self-5669b8e261c32c1d4edbf1d99cecfd5f93619e520e4bf273ac23a6da0c65c56f.css?body=1" />
+    <link rel="stylesheet" media="all" href="/assets/application.self-d7682b02dbd64be604c18315144e1023250ccd053374bb6d9ab10d8742101777.css?body=1" data-turbolinks-track="reload" />
+        <link rel="stylesheet" media="screen" href="/assets/styles/github-gist.min.self-acfbf141dac7c1dea84e2deb4fda718cb49b73a2610335f12c6f1202257066a1.css?body=1" /> 
 
   </head>
 
@@ -57,12 +57,12 @@
                         <div>
                             <p class="article_container"><p>Plamen Kolev</p>
 
-<h1>Genetic Programming</h1>
+<h1 id="genetic-programming">Genetic Programming</h1>
 
-<h2>Revised justification</h2>
+<h2 id="revised-justification">Revised justification</h2>
 
 <p><img src="gpimages/gp.png" alt="Image taken from
-http://www.ra.cs.uni-tuebingen.de/software/JCell/images/docbook/gp.png">
+http://www.ra.cs.uni-tuebingen.de/software/JCell/images/docbook/gp.png" />
 aa
 As the first biologically inspired machine learning algorithm, I decided
 to use Genetic Programming. Genetic Programming is suitable for
@@ -83,10 +83,10 @@ generic solution.</p>
 
 <p>In genetic programming, each decision branch is formed by a mathematical
 expression (functions). For the dataset, I experimented with different
-&#39;syntax&#39; functions. The findings are documented in the tuning section
+‘syntax’ functions. The findings are documented in the tuning section
 for this algorithm, but the most effective were the trigonometric ones.</p>
 
-<h2>Description of implementation</h2>
+<h2 id="description-of-implementation">Description of implementation</h2>
 
 <p>As mentioned above, I used the <strong>epochx</strong> library framework to bootstrap
 my implementation. I created a new source package called <strong>GP</strong>, which
@@ -121,9 +121,9 @@ syntax.add(new AbsoluteFunction());</p>
 <p>syntax.add(new AddFunction());
 syntax.add(new DivisionProtectedFunction());
 syntax.add(new SubtractFunction());
-...
+…
 for (int i = 0; i &lt; Attributes.getNumAttributes(); i++) {
-    syntax.add( variables[i] = new Variable(&quot;dim&quot; + i, Double.class) );
+    syntax.add( variables[i] = new Variable(“dim” + i, Double.class) );
 }
 ```</p>
 
@@ -133,7 +133,7 @@ dataset, as trigonometric functions are suitable for classifying the
 circular representation of the data.</p>
 
 <p>An auxiliary function called <code>parseData</code> is provided just to store the
-data in an internal array for later usage.<br>
+data in an internal array for later usage.<br />
 This class also returns itself as an instance when <code>generateClassifier</code>
 is called. The method is responsible for setting the different tuning
 parameters and training the genetic program.</p>
@@ -175,7 +175,7 @@ tune different parameters. Finally, the classifier also implements
 visualise, which draws a representation of the training and test data to
 the screen using <code>Jpanel</code> in a class called <code>Picasso</code>.</p>
 
-<h2>Tuning for the provided dataset</h2>
+<h2 id="tuning-for-the-provided-dataset">Tuning for the provided dataset</h2>
 
 <p>For the tuning, I exposed a variety of parameters that are used when
 creating and training the classifier. The most important tunable
@@ -207,38 +207,124 @@ with the program’s diversity.</p>
 and reproduction probability did not provide a significant difference
 during my experiments.</p>
 
-<h2>Performance report</h2>
+<h2 id="performance-report">Performance report</h2>
 
-<p>| Runtime | Efficiency in %    | Population size |
-| ------- | ------------------ | --------------- |
-| 0.506   | 48.421052631578945 | 10              |
-| 7.528   | 86.31578947368422  | 40              |
-| 10.396  | 88.42105263157895  | 80              |
-| 30.763  | 90.52631578947368  | 200             |
-| 53.695  | 86.31578947368422  | 500             |
-| 163.121 | 90.52631578947368  | 1200            |
-| 232.42  | 92.63157894736842  | 1600            |</p>
+<table>
+  <thead>
+    <tr>
+      <th>Runtime</th>
+      <th>Efficiency in %</th>
+      <th>Population size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.506</td>
+      <td>48.421052631578945</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>7.528</td>
+      <td>86.31578947368422</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>10.396</td>
+      <td>88.42105263157895</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>30.763</td>
+      <td>90.52631578947368</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>53.695</td>
+      <td>86.31578947368422</td>
+      <td>500</td>
+    </tr>
+    <tr>
+      <td>163.121</td>
+      <td>90.52631578947368</td>
+      <td>1200</td>
+    </tr>
+    <tr>
+      <td>232.42</td>
+      <td>92.63157894736842</td>
+      <td>1600</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>GP algorithm with different population size</p>
 
-<p><img src="gpimages/gp_population.png" alt="gp population"></p>
+<p><img src="gpimages/gp_population.png" alt="gp population" /></p>
 
-<p>| Time   | Efficiency in %    | Generation number |
-| ------ | ------------------ | ----------------- |
-| 1.087  | 48.91304347826087  | 1                 |
-| 1.267  | 54.736842105263165 | 4                 |
-| 2.045  | 75.26315789473685  | 8                 |
-| 3.582  | 86.8421052631579   | 18                |
-| 12.429 | 91.05263157894737  | 20                |
-| 10.704 | 87.89473684210526  | 24                |
-| 17.317 | 90.52631578947368  | 28                |
-| 16.921 | 84.73684210526315  | 30                |
-| 14.252 | 93.15789473684211  | 40                |
-| 25.816 | 90.0               | 60                |</p>
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Efficiency in %</th>
+      <th>Generation number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1.087</td>
+      <td>48.91304347826087</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1.267</td>
+      <td>54.736842105263165</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2.045</td>
+      <td>75.26315789473685</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3.582</td>
+      <td>86.8421052631579</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>12.429</td>
+      <td>91.05263157894737</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>10.704</td>
+      <td>87.89473684210526</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>17.317</td>
+      <td>90.52631578947368</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>16.921</td>
+      <td>84.73684210526315</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>14.252</td>
+      <td>93.15789473684211</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>25.816</td>
+      <td>90.0</td>
+      <td>60</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Table showing runs with different generations (stopping criteria)</p>
 
-<p><img src="gpimages/gp_generations.png" alt="gp generations"></p>
+<p><img src="gpimages/gp_generations.png" alt="gp generations" /></p>
 
 <p>I also experimented with different crossover probability, number of
 elite chromosomes and mutation but they did not improve or lower the
@@ -246,49 +332,148 @@ efficiency. The difference I noticed is the runtime, as these parameters
 allow the GP to perform additional operations pore often. I have
 included a table with my findings for completeness.</p>
 
-<p>|        |                   |                        |
-| ------ | ----------------- | ---------------------- |
-| Time   | Efficiency %      | Elite population count |
-| 22.11  | 92.63157894736842 | 1                      |
-| 38.558 | 93.15789473684211 | 4                      |
-| 42.268 | 90.0              | 12                     |
-| 34.73  | 97.89473684210527 | 18                     |
-| 43.304 | 88.94736842105263 | 24                     |
-| 35.337 | 96.3157894736842  | 30                     |</p>
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th> </th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Time</td>
+      <td>Efficiency %</td>
+      <td>Elite population count</td>
+    </tr>
+    <tr>
+      <td>22.11</td>
+      <td>92.63157894736842</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>38.558</td>
+      <td>93.15789473684211</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>42.268</td>
+      <td>90.0</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>34.73</td>
+      <td>97.89473684210527</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>43.304</td>
+      <td>88.94736842105263</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>35.337</td>
+      <td>96.3157894736842</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Table of different size of the elite population</p>
 
-<p>| Time   | Efficiency in %   | Crossover probability |
-| ------ | ----------------- | --------------------- |
-| 77.397 | 90.0              | 0.1                   |
-| 87.546 | 94.21052631578948 | 0.3                   |
-| 82.201 | 87.36842105263159 | 0.4                   |
-| 58.289 | 93.15789473684211 | 0.8                   |
-| 62.03  | 94.21052631578948 | 1.0                   |</p>
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Efficiency in %</th>
+      <th>Crossover probability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>77.397</td>
+      <td>90.0</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>87.546</td>
+      <td>94.21052631578948</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>82.201</td>
+      <td>87.36842105263159</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>58.289</td>
+      <td>93.15789473684211</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>62.03</td>
+      <td>94.21052631578948</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Table of different crossover probability</p>
 
-<p>| Time    | Efficiency in %   | Mutation probability |
-| ------- | ----------------- | -------------------- |
-| 15.015  | 85.78947368421052 | 0.1                  |
-| 94.777  | 89.47368421052632 | 0.2                  |
-| 79.374  | 88.94736842105263 | 0.4                  |
-| 105.695 | 93.6842105263158  | 0.6                  |
-| 62.391  | 88.42105263157895 | 0.8                  |
-| 71.862  | 91.57894736842105 | 1.0                  |</p>
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Efficiency in %</th>
+      <th>Mutation probability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15.015</td>
+      <td>85.78947368421052</td>
+      <td>0.1</td>
+    </tr>
+    <tr>
+      <td>94.777</td>
+      <td>89.47368421052632</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>79.374</td>
+      <td>88.94736842105263</td>
+      <td>0.4</td>
+    </tr>
+    <tr>
+      <td>105.695</td>
+      <td>93.6842105263158</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>62.391</td>
+      <td>88.42105263157895</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>71.862</td>
+      <td>91.57894736842105</td>
+      <td>1.0</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Mutation probability</p>
 
-<h1>Neural Network</h1>
+<h1 id="neural-network">Neural Network</h1>
 
-<h2>Revised Justification</h2>
+<h2 id="revised-justification-1">Revised Justification</h2>
 
 <p><img src="neuralimages/network.jpg" alt="Taken from
-https://www.codeproject.com/KB/dotnet/predictor/network.jpg"></p>
+https://www.codeproject.com/KB/dotnet/predictor/network.jpg" /></p>
 
 <p>As mentioned in the coursework proposal, I chose Neural network as the
 method for classification for several reasons: It is suitable for
-classifying multiple &#39;features&#39; as neural networks have been widely used
+classifying multiple ‘features’ as neural networks have been widely used
 for speech recognition, facial recognition and malignant cancer
 detection (Álvarez L. et al. 2009). The Universal approximation theorem
 also states that a neural network has the ability to can compute every
@@ -301,7 +486,7 @@ approaches.</p>
 topic in computing and wanted to experiment with the different
 activation functions and parameters.</p>
 
-<h2>Implementation description</h2>
+<h2 id="implementation-description">Implementation description</h2>
 
 <p>Implementing the solution was a multi-part process. During my research,
 I found it suitable to use Neuroph java framework for the supervised
@@ -410,11 +595,8 @@ int prediction = (int) Math.round(result[0]);
 if(prediction &gt; Attributes.getNumAttributes() || prediction &lt; 0){
     return -1;
 }
-return prediction;
+return prediction; } ```
 </code></pre>
-
-<p>}
-```</p>
 
 <p><code>classifyInstance</code> function is used to return a prediction after the
 network has gone through the learning process. In this case, the
@@ -428,7 +610,7 @@ more generally, between 0 to n-1 where n is the class range.</p>
 <p><code>java
 public void printClassifier() {
     for (Double weight : mlp.getWeights()) {
-        System.out.print(&quot;Output weights: &quot; + weight);
+        System.out.print("Output weights: " + weight);
     }
     System.out.println();
 }
@@ -440,8 +622,8 @@ neural network and print it out.</p>
 <p>Finally, I created a helper function called <code>initConfig()</code> to read
 environment variables that allow for dynamic tuning and shell execution
 of the solution for generating statistics. I have included the shell
-scripts used for generating the performance data under &quot;gp_shell&quot; for
-the genetic programming algorithm and &quot;neural_shell&quot; for the neural
+scripts used for generating the performance data under “gp_shell” for
+the genetic programming algorithm and “neural_shell” for the neural
 network algorithm. They have been developed and tested under Ubuntu
 16.04 and work by using environmental variables. When running the
 program, it will create a report file in the current directory with the
@@ -449,10 +631,10 @@ performance, duration and the tuned parameters.</p>
 
 <p>Finally, the classifier also implements visualise, which draws a
 representation of the training and test data to the screen using
-<code>Jpanel</code> in a class called <code>Picasso</code>.<br>
-<em>#</em> Description of adjustment and tuning<br>
+<code>Jpanel</code> in a class called <code>Picasso</code>.<br />
+<em>#</em> Description of adjustment and tuning<br />
 A neural network allows for a variety of parameter tweaking and
-different optimisations.<br>
+different optimisations.<br />
 Reading up on different approaches for training a neural network, The
 report (Moriera, M 1995) describes the purpose of a learning rate. The
 paper suggests to use a learning rate that is sufficiently large to
@@ -487,22 +669,79 @@ effect due to the data being evenly distributed and relatively short. As
 mentioned above, data can also be scaled, but again, this also has a
 negative effect on the accuracy.</p>
 
-<h2>Performance report</h2>
+<h2 id="performance-report-1">Performance report</h2>
 
-<p>| <strong>Time in seconds</strong> | <strong>Efficiency in %</strong> | Number of iterations |
-| ------------------- | ------------------- | -------------------- |
-| 0.189               | 85.26315789473684   | 1                    |
-| 0.489               | 86.8421052631579    | 20                   |
-| 0.838               | 87.36842105263159   | 40                   |
-| 1.121               | 87.89473684210526   | 60                   |
-| 1.371               | 88.42105263157895   | 80                   |
-| 1.642               | 88.94736842105263   | 100                  |
-| 10.2                | 96.3157894736842    | 748                  |
-| 13.524              | 96.3157894736842    | 997                  |
-| 26.391              | 97.36842105263158   | 1993                 |
-| 28.076              | 97.36842105263158   | 2242                 |
-| 21.338              | 96.84210526315789   | 2989                 |
-| 32.731              | 96.84210526315789   | 3238                 |</p>
+<table>
+  <thead>
+    <tr>
+      <th><strong>Time in seconds</strong></th>
+      <th><strong>Efficiency in %</strong></th>
+      <th>Number of iterations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.189</td>
+      <td>85.26315789473684</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>0.489</td>
+      <td>86.8421052631579</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>0.838</td>
+      <td>87.36842105263159</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>1.121</td>
+      <td>87.89473684210526</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>1.371</td>
+      <td>88.42105263157895</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>1.642</td>
+      <td>88.94736842105263</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>10.2</td>
+      <td>96.3157894736842</td>
+      <td>748</td>
+    </tr>
+    <tr>
+      <td>13.524</td>
+      <td>96.3157894736842</td>
+      <td>997</td>
+    </tr>
+    <tr>
+      <td>26.391</td>
+      <td>97.36842105263158</td>
+      <td>1993</td>
+    </tr>
+    <tr>
+      <td>28.076</td>
+      <td>97.36842105263158</td>
+      <td>2242</td>
+    </tr>
+    <tr>
+      <td>21.338</td>
+      <td>96.84210526315789</td>
+      <td>2989</td>
+    </tr>
+    <tr>
+      <td>32.731</td>
+      <td>96.84210526315789</td>
+      <td>3238</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Efficiency with different iterations</p>
 
@@ -511,25 +750,78 @@ iterations. In my case, it peaked at about 1500-2000 iterations, at
 which point it did not have a significant impact on the efficiency but
 it impacted the running time.</p>
 
-<p><img src="neuralimages/iterations.png" alt="iterations"></p>
+<p><img src="neuralimages/iterations.png" alt="iterations" /></p>
 
-<p>| <strong>Time</strong> | <strong>Accuracy in %</strong> | <strong>Hidden nodes</strong> |
-| -------- | ----------------- | ---------------- |
-| 6.379    | 82.10526315789474 | 1                |
-| 9.108    | 84.21052631578947 | 3                |
-| 12.434   | 91.05263157894737 | 6                |
-| 12.125   | 94.21052631578948 | 10               |
-| 14.309   | 98.42105263157895 | 17               |
-| 16.069   | 97.36842105263158 | 23               |
-| 15.644   | 98.42105263157895 | 24               |
-| 17.264   | 95.78947368421052 | 29               |
-| 17.871   | 97.89473684210527 | 33               |
-| 18.304   | 97.36842105263158 | 36               |
-| 20.96    | 97.36842105263158 | 40               |</p>
+<table>
+  <thead>
+    <tr>
+      <th><strong>Time</strong></th>
+      <th><strong>Accuracy in %</strong></th>
+      <th><strong>Hidden nodes</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>6.379</td>
+      <td>82.10526315789474</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>9.108</td>
+      <td>84.21052631578947</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>12.434</td>
+      <td>91.05263157894737</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>12.125</td>
+      <td>94.21052631578948</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>14.309</td>
+      <td>98.42105263157895</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>16.069</td>
+      <td>97.36842105263158</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>15.644</td>
+      <td>98.42105263157895</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>17.264</td>
+      <td>95.78947368421052</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>17.871</td>
+      <td>97.89473684210527</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>18.304</td>
+      <td>97.36842105263158</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>20.96</td>
+      <td>97.36842105263158</td>
+      <td>40</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Impact on different hidden nodes</p>
 
-<p><img src="neuralimages/hidden_nodes.png" alt="hidden nodes"></p>
+<p><img src="neuralimages/hidden_nodes.png" alt="hidden nodes" /></p>
 
 <p>In this case, increasing the amount of hidden nodes had a significant
 impact on the accuracy, with it peaking at about 17-24 nodes. I found
@@ -540,25 +832,59 @@ thus chose it as the base for some runs.</p>
 max error results without including the tables, but the data can be
 found and viewed under neuralstats.csv</p>
 
-<p><img src="neuralimages/learningrate.png" alt="learningrate"></p>
+<p><img src="neuralimages/learningrate.png" alt="learningrate" /></p>
 
-<p><img src="neuralimages/maxewrrorrate.png" alt="maxewrrorrate"></p>
+<p><img src="neuralimages/maxewrrorrate.png" alt="maxewrrorrate" /></p>
 
 <p>I observed that learning rate and max error rate were the most efficient
 at around 1% and increasing them had mostly negative effect on the
 effectiveness.</p>
 
-<p>| Time    | Efficiency in %   | Normalised |
-| ------- | ----------------- | ---------- |
-| 15.487, | 82.63157894736842 | yes        |
-| 15.009  | 98.42105263157895 | No         |</p>
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Efficiency in %</th>
+      <th>Normalised</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15.487,</td>
+      <td>82.63157894736842</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>15.009</td>
+      <td>98.42105263157895</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Normalisation vs. no normalisation</p>
 
-<p>| Time    | Efficiency in %   | Scaled down |
-| ------- | ----------------- | ----------- |
-| 15.652, | 74.21052631578947 | Yes         |
-| 15.705, | 96.3157894736842  | No          |</p>
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Efficiency in %</th>
+      <th>Scaled down</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>15.652,</td>
+      <td>74.21052631578947</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>15.705,</td>
+      <td>96.3157894736842</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Down scaling (factor of 10) vs. no down scaling</p>
 
@@ -566,17 +892,46 @@ effectiveness.</p>
 did not yield a positive effect, on the contrary, it reduced the
 classifier’s ability to make accurate predictions.</p>
 
-<p>| Time    | Efficiency in %   | Activation function |
-| ------- | ----------------- | ------------------- |
-| 16.638  | 95.78947368421052 | SIGMOID             |
-| 16.37   | 92.63157894736842 | GAUSSIAN            |
-| 14.283  | 50.0              | LINEAR              |
-| 13.596  | 17.20430107526882 | TANH                |
-| 14.101, | 50.0              | TRAPEZOID           |</p>
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Efficiency in %</th>
+      <th>Activation function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>16.638</td>
+      <td>95.78947368421052</td>
+      <td>SIGMOID</td>
+    </tr>
+    <tr>
+      <td>16.37</td>
+      <td>92.63157894736842</td>
+      <td>GAUSSIAN</td>
+    </tr>
+    <tr>
+      <td>14.283</td>
+      <td>50.0</td>
+      <td>LINEAR</td>
+    </tr>
+    <tr>
+      <td>13.596</td>
+      <td>17.20430107526882</td>
+      <td>TANH</td>
+    </tr>
+    <tr>
+      <td>14.101,</td>
+      <td>50.0</td>
+      <td>TRAPEZOID</td>
+    </tr>
+  </tbody>
+</table>
 
 <p>Different activation functions</p>
 
-<h1>Comparison between methods</h1>
+<h1 id="comparison-between-methods">Comparison between methods</h1>
 
 <p>The difference between genetic programming and neural networks (MLP) was
 very noticeable. The neural network produced a more generic solution, as
@@ -595,63 +950,79 @@ less generic as it required special tuning to achieve good results. It
 also does not provide consistent accuracy, where as the Neural Network
 had much smaller margin of error.</p>
 
-<h1>General note</h1>
+<h1 id="general-note">General note</h1>
 
 <p>The sourcecode folder contains gp_shell and neural_shell bash scripts
 that will work only on linux.</p>
 
-<p>To manually run the java executable, use the following commands<br>
+<p>To manually run the java executable, use the following commands<br />
 <code>java -cp CSC3423.jar Biocomputing.Neural.Control dataset/Training.arff
-dataset/Test.arff</code><br>
+dataset/Test.arff</code><br />
 <code>java -cp CSC3423.jar Biocomputing.GP.GPControl dataset/Training.arff
-dataset/Test.arff</code><br>
+dataset/Test.arff</code><br />
 Where <code>CSC3423.jar</code> is the executable jar file in the out folder and the
-arff files are the Training and Testing data sets.<br>
+arff files are the Training and Testing data sets.<br />
 The Neural network accepts the following environmental variables:
 <code>ITERATIONS</code>, <code>GENERATIONS</code>,<code>ACTIVATION_FUNCTION</code>,
-<code>HIDDENNODES</code>,<code>MAXERROR</code>,<code>LEARNINGRATE</code>,<code>NORMALISE</code>,<code>SCALE</code>.<br>
+<code>HIDDENNODES</code>,<code>MAXERROR</code>,<code>LEARNINGRATE</code>,<code>NORMALISE</code>,<code>SCALE</code>.<br />
 GPClassifier environmental varialbes: <code>POPULATION_SIZE</code>, <code>GENERATIONS</code>,
 <code>ELITES</code>, <code>CROSSOVER_PROB</code>, <code>MUTATION_PROB</code>, <code>REPRODUCTION_PROB</code> and
-<code>TOURNAMENT_SIZE</code>.<br>
+<code>TOURNAMENT_SIZE</code>.<br />
 In windows, one can use the command <code>set HIDDENNODES=5</code> followed by the
 java run command to set these values.</p>
 
-<h1>References</h1>
+<h1 id="references">References</h1>
 
 <ol>
-<li><p>Moreira, M. (1995). Neural Networks with Adaptive Learning Rate and
+  <li>
+    <p>Moreira, M. (1995). Neural Networks with Adaptive Learning Rate and
 Momentum Terms. Available at
 <a href="https://infoscience.epfl.ch/record/82307/files/95-04.pdf">https://infoscience.epfl.ch/record/82307/files/95-04.pdf</a>. Accessed
-on 12.12.2016</p></li>
-<li><p>Kun-Hong L. et al. (2008). A genetic programming-based approach to
+on 12.12.2016</p>
+  </li>
+  <li>
+    <p>Kun-Hong L. et al. (2008). A genetic programming-based approach to
 the classification of multiclass microarray datasets. Available at
 <a href="http://bioinformatics.oxfordjournals.org/content/25/3/331.full">http://bioinformatics.oxfordjournals.org/content/25/3/331.full</a>.
-Accessed on 14.12.2016</p></li>
-<li><p>McCaffrey J. (2014). How To Standardize Data for Neural Networks.
+Accessed on 14.12.2016</p>
+  </li>
+  <li>
+    <p>McCaffrey J. (2014). How To Standardize Data for Neural Networks.
 Available at
 <a href="https://visualstudiomagazine.com/articles/2014/01/01/how-to-standardize-data-for-neural-networks.aspx">https://visualstudiomagazine.com/articles/2014/01/01/how-to-standardize-data-for-neural-networks.aspx</a>.
-Accessed on 14.12.2016.</p></li>
-<li><p>Jeroen Eggermont et al (2004). Genetic Programming for Data
+Accessed on 14.12.2016.</p>
+  </li>
+  <li>
+    <p>Jeroen Eggermont et al (2004). Genetic Programming for Data
 Classification: Partitioning the Search Space. Available at
-<a href="http://liacs.leidenuniv.nl/%7Ekosterswa/SAC2003final.pdf">http://liacs.leidenuniv.nl/~kosterswa/SAC2003final.pdf</a>. Accessed
-on 15.12.2016</p></li>
-<li><p>Álvarez L. et al. (2009). Artificial neural networks applied to
+<a href="http://liacs.leidenuniv.nl/~kosterswa/SAC2003final.pdf">http://liacs.leidenuniv.nl/~kosterswa/SAC2003final.pdf</a>. Accessed
+on 15.12.2016</p>
+  </li>
+  <li>
+    <p>Álvarez L. et al. (2009). Artificial neural networks applied to
 cancer detection in a breast screening programme. Available at
-<a href="http://ac.els-cdn.com/S0895717710001378/1-s2.0-S0895717710001378-main.pdf?_tid=c4a6e3c0-c2b3-11e6-9ddd-00000aab0f6b&acdnat=1481798983_5428dbaa26e2d27c669d7906a5c1a77a">http://ac.els-cdn.com/S0895717710001378/1-s2.0-S0895717710001378-main.pdf?_tid=c4a6e3c0-c2b3-11e6-9ddd-00000aab0f6b&amp;acdnat=1481798983_5428dbaa26e2d27c669d7906a5c1a77a</a>.
-Accessed on 15.12.2016</p></li>
-<li><p>Bengio Y., LeCun Y. (2007) Scaling Learning Algorithms towards AI.
+<a href="http://ac.els-cdn.com/S0895717710001378/1-s2.0-S0895717710001378-main.pdf?_tid=c4a6e3c0-c2b3-11e6-9ddd-00000aab0f6b&amp;acdnat=1481798983_5428dbaa26e2d27c669d7906a5c1a77a">http://ac.els-cdn.com/S0895717710001378/1-s2.0-S0895717710001378-main.pdf?_tid=c4a6e3c0-c2b3-11e6-9ddd-00000aab0f6b&amp;acdnat=1481798983_5428dbaa26e2d27c669d7906a5c1a77a</a>.
+Accessed on 15.12.2016</p>
+  </li>
+  <li>
+    <p>Bengio Y., LeCun Y. (2007) Scaling Learning Algorithms towards AI.
 Available at
 <a href="http://yann.lecun.com/exdb/publis/pdf/bengio-lecun-07.pdf">http://yann.lecun.com/exdb/publis/pdf/bengio-lecun-07.pdf</a>
-(Accessed: 16 Nov 2016).</p></li>
+(Accessed: 16 Nov 2016).</p>
+  </li>
 </ol>
 
-<h1>Credits</h1>
+<h1 id="credits">Credits</h1>
 
 <ol>
-<li><p>Genetic programming tree image taken from
-<a href="http://www.ra.cs.uni-tuebingen.de/software/JCell/images/docbook/gp.png">http://www.ra.cs.uni-tuebingen.de/software/JCell/images/docbook/gp.png</a></p></li>
-<li><p>Multilayer perceptron with back-propagation image taken from
-<a href="https://www.codeproject.com/KB/dotnet/predictor/network.jpg">https://www.codeproject.com/KB/dotnet/predictor/network.jpg</a></p></li>
+  <li>
+    <p>Genetic programming tree image taken from
+<a href="http://www.ra.cs.uni-tuebingen.de/software/JCell/images/docbook/gp.png">http://www.ra.cs.uni-tuebingen.de/software/JCell/images/docbook/gp.png</a></p>
+  </li>
+  <li>
+    <p>Multilayer perceptron with back-propagation image taken from
+<a href="https://www.codeproject.com/KB/dotnet/predictor/network.jpg">https://www.codeproject.com/KB/dotnet/predictor/network.jpg</a></p>
+  </li>
 </ol>
 </p>
                         </div>
@@ -718,7 +1089,8 @@ Available at
 </div>    
   </body>
 
-  <script src="/assets/application-349f5f5e3c9554ec0a886e7e8b4c2aa8457f60f1dfff3f213e1439658b82088d.js" data-turbolinks-track="reload"></script>
+  <script src="/assets/script.self-552e77376ce8f27ae54ff58ccd7959b6e8d0b4f81e605a80b4ed7d8361c2834d.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/application.self-2e15de26e2b5b9edfccd68918c2e8908c06a23f38173ba7bfef7155f1b30ff75.js?body=1" data-turbolinks-track="reload"></script>
       <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 
